@@ -1,5 +1,11 @@
 
+$bg-primary-color: #B4EABA;
+$bg-secondary-color: #A4D4E1;
 
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #ccc;
+
+$color-grey-dark-1: #222;
 
 $bp-largest: 75em;
 $bp-large: 68.75em;
@@ -17,6 +23,7 @@ $bp-smallest: 31.25em;
 
 html {
     font-size: 62.5%; // 1rem==10px
+    
 
     @media only screen and (max-width: $bp-large) {
         font-size: 50%;
@@ -24,5 +31,6 @@ html {
 }
 
 body {
-    
+    font-family: 'Roboto', sans-serif;
+    color: $color-grey-dark-1;
 }

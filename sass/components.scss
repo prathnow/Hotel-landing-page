@@ -1,0 +1,60 @@
+.logo {
+    margin: 0 3rem; 
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navigation {
+    margin-left: auto;
+    margin-right: 3rem;
+    padding: 2.5rem 0;
+    font-weight: 500;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__item {
+        padding: 0 2rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-grey-dark-1;
+        padding: 1rem;
+        transition: all .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: $bg-primary-color;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    &__login-box {
+        padding: 0 3rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid $color-grey-light-2;
+    background-color: $color-grey-light-1;
+    cursor: pointer;
+    transition: all .2s;
+
+    &__login {
+        padding: 0.6rem 2rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    &__login:hover {
+        background-color: $bg-secondary-color;
+    }
+}

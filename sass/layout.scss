@@ -1,6 +1,10 @@
 .container {
     margin: 0 auto;
-    width: 120rem;
+    max-width: 120rem;
+    
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .header-nav {
@@ -8,4 +12,55 @@
     font-size: 1.4rem;
     justify-content: space-between;
     align-items: center;
+}
+
+.header {
+    min-height: 45rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba($bg-primary-color, 1) 0 20%, rgba($bg-secondary-color, 0.1) 45%),
+    url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    &__text-box {
+        padding: 7rem;
+    }
+
+    &__hotel-name {
+        margin-top: 5rem;
+
+        &--link:link,
+        &--link:visited {
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: #006d32;
+            transition: all .2s;
+            
+        }
+        &--link:hover,
+        &--link:active {
+            color: #30a14e;
+        }
+    }
+}
+
+.heading-primary {
+    display: flex;
+    flex-direction: column;
+    color: $color-grey-dark-1;
+    
+    &--main {
+        font-size: 4rem;
+        font-weight: 600;
+        width: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    &--sub {
+        font-size: 1.4rem;
+        font-weight: 500;
+        width: 40rem;
+    }
 }

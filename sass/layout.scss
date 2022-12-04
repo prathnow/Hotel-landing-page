@@ -30,9 +30,12 @@
 
     &__hotel-name {
         margin-top: 5rem;
+        
 
         &--link:link,
         &--link:visited {
+            display: flex;
+            align-items: center;
             font-size: 1.6rem;
             font-weight: 500;
             text-decoration: none;
@@ -43,6 +46,15 @@
         &--link:hover,
         &--link:active {
             color: #30a14e;
+        }
+
+        &--icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            border: 2px solid $color-grey-light-1;
+            padding: .8rem;
+            margin-right: 1rem;
         }
     }
 }

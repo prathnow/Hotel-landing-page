@@ -1,5 +1,5 @@
 .logo {
-    margin: 0 3rem; 
+    margin: 0 3rem;
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -216,4 +216,77 @@
     }
 
     
+}
+
+.hotel-card {
+
+    margin-top: -16rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__container {
+        width: 30rem;
+        border-radius: 10px;
+        overflow: hidden;    
+        background-color: #fff;
+        box-shadow: 0 0 2px rgba($color-grey-dark-1, 0.3);
+        transition: all .3s;
+    }
+
+    &__container:hover {
+        box-shadow: 0 0 30px rgba($color-grey-dark-1, 0.3);
+        transform: scale(1.01) translateY(-1rem);
+        cursor: pointer;
+    }
+
+    &__title {
+        height: 18rem;
+        position: relative;
+        overflow: hidden;
+
+        &__img {
+            width: 30rem;
+        }
+
+        &__text {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+
+    &__description {
+        height: 8rem;
+        padding: 2rem;
+        line-height: 2rem;
+        position: relative;
+
+        &__price {
+            color: rgb(219, 18, 18);
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        &__id {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        &__icon {
+            width: 4.5rem;
+            height: 4.5rem;
+            position: absolute;
+            top: 50%;
+            right: 4rem;
+            transform: translateY(-50%);
+            border: 1px solid $bg-secondary-color;
+            border-radius: 50%;
+            padding: 1rem;
+        }
+    }
 }
